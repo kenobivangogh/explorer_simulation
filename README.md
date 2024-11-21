@@ -1,2 +1,2 @@
 # explorer_simulation
-Simulation for path planning algorithm (Gazebo - rviz)
+Simulation for path planning algorithm (Gazebo - rviz) 
