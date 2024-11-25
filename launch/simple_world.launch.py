@@ -27,8 +27,8 @@ def generate_launch_description():
         'turtlebot3_config.rviz'  # Eğer bir RViz ayar dosyası kullanmak isterseniz
     )
 #   rviz_config = os.path.join(pkg_explorer_simulation, 'rviz', 'turtlebot3_config.rviz')
-    if not os.path.exists(rviz_config):
-        raise FileNotFoundError(f"RViz config file not found: {rviz_config}")
+    #if not os.path.exists(rviz_config):
+       # raise FileNotFoundError(f"RViz config file not found: {rviz_config}")
 
     return LaunchDescription([
         # Gazebo'yu başlat
