@@ -24,7 +24,7 @@ def generate_launch_description():
     rviz_config = os.path.join(
         get_package_share_directory('explorer_simulation'),
         'rviz',
-        'turtlebot3_config.rviz'  # Eğer bir RViz ayar dosyası kullanmak isterseniz
+        'tb3_gazebo.rviz'  # Eğer bir RViz ayar dosyası kullanmak isterseniz
     )
 #   rviz_config = os.path.join(pkg_explorer_simulation, 'rviz', 'turtlebot3_config.rviz')
     if not os.path.exists(rviz_config):
