@@ -45,7 +45,7 @@ def generate_launch_description():
                 os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'turtlebot3_world.launch.py')
                 # os.path.join(pkg_turtlebot3_gazebo, 'launch', 'turtlebot3_world.launch.py')
             )
-        ),
+        ),        
         
         # RViz'i başlat
         Node(
