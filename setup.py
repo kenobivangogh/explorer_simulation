@@ -11,6 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/simple_world.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/multi_geo_world.launch.py']),
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/robot_state_publisher.launch.py']),
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/spawn_turtlebot3.launch.py']),
         ('share/' + package_name + '/worlds', ['worlds/simple.world']),
