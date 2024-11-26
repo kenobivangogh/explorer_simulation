@@ -46,16 +46,7 @@ def generate_launch_description():
                 # os.path.join(pkg_turtlebot3_gazebo, 'launch', 'turtlebot3_world.launch.py')
             )
         ),        
-        Node(
-            package='gazebo_ros',
-            executable='spawn_entity.py',
-            name='spawn_turtlebot3',
-            arguments=[
-                '-entity', 'turtlebot3',
-                '-file', os.path.join(get_package_share_directory('turtlebot3_description'), 'urdf', 'turtlebot3_burger.urdf')
-            ],
-            output='screen'
-        ),        
+         
         # RViz'i başlat
         Node(
             package='rviz2',
