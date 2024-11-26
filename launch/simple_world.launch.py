@@ -6,7 +6,7 @@ from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
-    """paketlerin dizinlerini alıp o şekilde devam etmek için"""
+    """paketlerin dizinlerini alp o şekilde devam etmek için"""
 #   pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 #   pkg_explorer_simulation = get_package_share_directory('explorer_simulation')
 #   pkg_turtlebot3_gazebo = get_package_share_directory('turtlebot3_gazebo')
