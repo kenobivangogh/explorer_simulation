@@ -40,12 +40,12 @@ def generate_launch_description():
         ),
 
                 # TurtleBot3'ü başlatmak için
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'turtlebot3_world.launch.py')
+#        IncludeLaunchDescription(
+#            PythonLaunchDescriptionSource(
+ #               os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'turtlebot3_world.launch.py')
                 # os.path.join(pkg_turtlebot3_gazebo, 'launch', 'turtlebot3_world.launch.py')
-            )
-        ),
+#            )
+ #       ),
         
         # RViz
         Node(
