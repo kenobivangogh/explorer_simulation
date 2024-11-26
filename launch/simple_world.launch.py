@@ -10,7 +10,7 @@ def generate_launch_description():
 #   pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 #   pkg_explorer_simulation = get_package_share_directory('explorer_simulation')
 #   pkg_turtlebot3_gazebo = get_package_share_directory('turtlebot3_gazebo')
-#   pkg_explorer_simulation = get_package_share_directory('explorer_simulation')
+
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
     world_file = os.path.join(
         get_package_share_directory('explorer_simulation'),
@@ -49,14 +49,14 @@ def generate_launch_description():
         # Robot State Publisher'ı başlat
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(get_package_share_directory('explorer_simulation'), 'launch', 'robot_state_publisher.launch.py')
+                os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'robot_state_publisher.launch.py')
             #   os.path.join(pkg_explorer_simulation, 'launch', 'robot_state_publisher.launch.py')
             )
         ),
         # TurtleBot3'ü simülasyona ekle
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(get_package_share_directory('explorer_simulation'), 'launch', 'spawn_turtlebot3.launch.py')
+                os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'spawn_turtlebot3.launch.py')
             #   os.path.join(pkg_explorer_simulation, 'launch', 'spawn_turtlebot3.launch.py')
             )
         ),        
