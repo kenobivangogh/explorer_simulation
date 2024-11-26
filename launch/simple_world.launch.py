@@ -49,13 +49,13 @@ def generate_launch_description():
  # 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(get_package_share_directory('explorer_simulation'), 'launch', 'robot_state_publisher.launch.py')
+                os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'robot_state_publisher.launch.py')
             )
         ),
         # TurtleBot3'ü simülasyona ekle
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
-                os.path.join(get_package_share_directory('explorer_simulation'), 'launch', 'spawn_turtlebot3.launch.py')
+                os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'spawn_turtlebot3.launch.py')
             )
         ),   
         # RViz
