@@ -92,10 +92,56 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>82 831000000</sim_time>
-      <real_time>23 1654268</real_time>
-      <wall_time>1732724052 784041181</wall_time>
-      <iterations>21502</iterations>
+      <sim_time>126 548000000</sim_time>
+      <real_time>8 931163646</real_time>
+      <wall_time>1732725198 436402293</wall_time>
+      <iterations>7966</iterations>
+      <model name='burger'>
+        <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
+        <scale>1 1 1</scale>
+        <link name='base_footprint'>
+          <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
+          <velocity>-9e-06 8e-06 -0.054063 0.00043 0.000562 -0</velocity>
+          <acceleration>-0.001695 5.7e-05 0.828386 1.9e-05 0.050351 1.2e-05</acceleration>
+          <wrench>-0.001695 5.7e-05 0.828386 0 -0 0</wrench>
+        </link>
+        <link name='base_link'>
+          <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
+          <velocity>-9e-06 8e-06 -0.054064 0.00043 0.000561 0</velocity>
+          <acceleration>0.001825 5.5e-05 0.829887 1.9e-05 0.050343 9e-06</acceleration>
+          <wrench>0.001507 4.6e-05 0.685266 0 -0 0</wrench>
+        </link>
+        <link name='base_scan'>
+          <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
+          <velocity>-9e-06 8e-06 -0.054059 0.00043 0.000562 -0</velocity>
+          <acceleration>0.006365 5.5e-05 0.829802 2.2e-05 0.050398 1.2e-05</acceleration>
+          <wrench>0.000726 6e-06 0.094597 0 -0 0</wrench>
+        </link>
+        <link name='caster_back_link'>
+          <pose>-8.08102 -8 0.004993 -2.29278 -0.059422 -0.008012</pose>
+          <velocity>-1.1e-05 1.1e-05 -0.053157 -0.002116 -0.002238 0</velocity>
+          <acceleration>1.7e-05 -3.6e-05 0.915441 0.001554 0.001878 0</acceleration>
+          <wrench>0 -0 0.004577 0 -0 0</wrench>
+        </link>
+        <link name='imu_link'>
+          <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
+          <velocity>-9e-06 8e-06 -0.05406 0.00043 0.000562 -0</velocity>
+          <acceleration>-0.001755 5.8e-05 0.828702 2e-05 0.050361 1.2e-05</acceleration>
+          <wrench>-0.001755 5.8e-05 0.828702 0 -0 0</wrench>
+        </link>
+        <link name='wheel_left_link'>
+          <pose>-8 -8 0.008526 0.000446 0.005823 6e-05</pose>
+          <velocity>6e-06 -4e-06 -0.054073 0.000423 0.000561 0</velocity>
+          <acceleration>0.001631 1e-06 0.827452 -3.8e-05 0.049443 -1.1e-05</acceleration>
+          <wrench>4.6e-05 0 0.023581 0 -0 0</wrench>
+        </link>
+        <link name='wheel_right_link'>
+          <pose>-8 -8 0.008526 0.000446 0.00598 6e-05</pose>
+          <velocity>6e-06 -4e-06 -0.054073 0.000423 0.000561 0</velocity>
+          <acceleration>0.001631 1e-06 0.827542 -3.3e-05 0.049431 -7e-06</acceleration>
+          <wrench>4.6e-05 0 0.023584 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -137,31 +183,31 @@
         </link>
       </model>
       <model name='unit_box_clone_1_clone_clone_clone'>
-        <pose>-9.52868 0.016356 0.490518 -0.002711 1e-06 0.000552</pose>
+        <pose>-9.52868 0.016432 0.861559 -0.007057 0.00017 0.000985</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-9.52868 0.016356 0.490518 -0.002711 1e-06 0.000552</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
+          <pose>-9.52868 0.016432 0.861559 -0.007057 0.00017 0.000985</pose>
+          <velocity>0 3e-06 0.008369 -0.000163 4e-06 0</velocity>
+          <acceleration>0 0 0 -0 -0 -0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_clone_1_clone_clone_clone_clone'>
-        <pose>9.51142 0.014158 0.490518 -0.002711 1e-06 0.000552</pose>
+        <pose>9.51142 0.014234 0.861559 -0.007057 0.00017 0.000985</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>9.51142 0.014158 0.490518 -0.002711 1e-06 0.000552</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
+          <pose>9.51142 0.014234 0.861559 -0.007057 0.00017 0.000985</pose>
+          <velocity>0 3e-06 0.008369 -0.000163 4e-06 0</velocity>
+          <acceleration>0 0 0 -0 -0 -0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_clone_2'>
-        <pose>-7.51159 -3.48047 0.5 0 -0 0</pose>
+        <pose>-7.34569 -3.5515 0.618974 -0.001197 0.209469 -0.032353</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-7.51159 -3.48047 0.5 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose>-7.34569 -3.5515 0.618974 -0.001197 0.209469 -0.032353</pose>
+          <velocity>0.005403 -0.002293 0.003887 0.000116 0.006888 -0.000555</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
@@ -207,22 +253,22 @@
         </link>
       </model>
       <model name='unit_box_clone_5_clone_clone'>
-        <pose>-0.028106 9.5398 0.497878 0 0.000849 -1.6e-05</pose>
+        <pose>-0.027811 9.53981 0.791018 -0.000365 0.015995 -0.000105</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.028106 9.5398 0.497878 0 0.000849 -1.6e-05</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
+          <pose>-0.027811 9.53981 0.791018 -0.000365 0.015995 -0.000105</pose>
+          <velocity>7e-06 0 0.006696 -8e-06 0.000368 0</velocity>
+          <acceleration>0 0 0 -0 -0 -0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_clone_5_clone_clone_clone'>
-        <pose>-0.01214 -9.46799 0.497878 0 0.000849 -1.6e-05</pose>
+        <pose>-0.011845 -9.46798 0.791018 -0.000365 0.015995 -0.000105</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.01214 -9.46799 0.497878 0 0.000849 -1.6e-05</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
+          <pose>-0.011845 -9.46798 0.791018 -0.000365 0.015995 -0.000105</pose>
+          <velocity>7e-06 0 0.006696 -8e-06 0.000368 0</velocity>
+          <acceleration>0 0 0 -0 -0 -0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
@@ -257,10 +303,10 @@
         </link>
       </model>
       <model name='unit_box_clone_6_clone_0_clone'>
-        <pose>0.028541 0.508801 0.5 0 -0 0</pose>
+        <pose>0.028541 0.503395 0.499825 -0.000117 0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.028541 0.508801 0.5 0 -0 0</pose>
+          <pose>0.028541 0.503395 0.499825 -0.000117 0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -387,11 +433,11 @@
         </link>
       </model>
       <model name='unit_box_clone_7_clone_clone'>
-        <pose>-0.006661 -8.08123 0.5 -1e-06 0 0</pose>
+        <pose>-0.006617 -8.0888 0.513066 0.016484 9.3e-05 -5.1e-05</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.006661 -8.08123 0.5 -1e-06 0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose>-0.006617 -8.0888 0.513066 0.016484 9.3e-05 -5.1e-05</pose>
+          <velocity>1e-06 -0.000173 0.000299 0.000377 2e-06 -1e-06</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
@@ -412,7 +458,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>0.927203 -5.59474 43.0219 0 1.4138 1.57229</pose>
+        <pose>0.941234 -5.56799 42.9595 0 1.4138 1.57229</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -3375,6 +3421,486 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>5.5085 -3.51869 0.499825 -0.000117 -0 -0</pose>
     </model>
+    <model name='burger'>
+      <pose>0 0 0.01 0 -0 0</pose>
+      <link name='base_footprint'>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='base_link'>
+        <inertial>
+          <pose>-0.032 0 0.07 0 -0 0</pose>
+          <inertia>
+            <ixx>0.723974</ixx>
+            <ixy>4.6864e-10</ixy>
+            <ixz>-1.09526e-08</ixz>
+            <iyy>0.723974</iyy>
+            <iyz>2.85826e-09</iyz>
+            <izz>0.65305</izz>
+          </inertia>
+          <mass>0.825735</mass>
+        </inertial>
+        <collision name='base_collision'>
+          <pose>-0.032 0 0.07 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.14 0.14 0.14</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='base_visual'>
+          <pose>-0.032 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://turtlebot3_common/meshes/burger_base.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='imu_link'>
+        <sensor name='tb3_imu' type='imu'>
+          <always_on>1</always_on>
+          <update_rate>200</update_rate>
+          <imu>
+            <angular_velocity>
+              <x>
+                <noise type='gaussian'>
+                  <mean>0</mean>
+                  <stddev>0.0002</stddev>
+                </noise>
+              </x>
+              <y>
+                <noise type='gaussian'>
+                  <mean>0</mean>
+                  <stddev>0.0002</stddev>
+                </noise>
+              </y>
+              <z>
+                <noise type='gaussian'>
+                  <mean>0</mean>
+                  <stddev>0.0002</stddev>
+                </noise>
+              </z>
+            </angular_velocity>
+            <linear_acceleration>
+              <x>
+                <noise type='gaussian'>
+                  <mean>0</mean>
+                  <stddev>0.017</stddev>
+                </noise>
+              </x>
+              <y>
+                <noise type='gaussian'>
+                  <mean>0</mean>
+                  <stddev>0.017</stddev>
+                </noise>
+              </y>
+              <z>
+                <noise type='gaussian'>
+                  <mean>0</mean>
+                  <stddev>0.017</stddev>
+                </noise>
+              </z>
+            </linear_acceleration>
+            <angular_velocity/>
+            <linear_acceleration/>
+          </imu>
+          <plugin name='turtlebot3_imu' filename='libgazebo_ros_imu_sensor.so'>
+            <ros>
+              <remapping>~/out:=imu</remapping>
+            </ros>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='base_scan'>
+        <inertial>
+          <pose>-0.02 0 0.161 0 -0 0</pose>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+          <mass>0.114</mass>
+        </inertial>
+        <collision name='lidar_sensor_collision'>
+          <pose>-0.02 0 0.161 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0508</radius>
+              <length>0.055</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='lidar_sensor_visual'>
+          <pose>-0.032 0 0.171 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://turtlebot3_common/meshes/lds.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='hls_lfcd_lds' type='ray'>
+          <always_on>1</always_on>
+          <visualize>1</visualize>
+          <pose>-0.032 0 0.171 0 -0 0</pose>
+          <update_rate>5</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>360</samples>
+                <resolution>1</resolution>
+                <min_angle>0</min_angle>
+                <max_angle>6.28</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.12</min>
+              <max>3.5</max>
+              <resolution>0.015</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='turtlebot3_laserscan' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <remapping>~/out:=scan</remapping>
+            </ros>
+            <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>base_scan</frame_name>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='wheel_left_link'>
+        <inertial>
+          <pose>0 0.08 0.023 -1.57 0 0</pose>
+          <inertia>
+            <ixx>0.00181582</ixx>
+            <ixy>-9.3392e-12</ixy>
+            <ixz>1.04909e-11</ixz>
+            <iyy>0.00329221</iyy>
+            <iyz>5.75694e-11</iyz>
+            <izz>0.00181582</izz>
+          </inertia>
+          <mass>0.0284989</mass>
+        </inertial>
+        <collision name='wheel_left_collision'>
+          <pose>0 0.08 0.023 -1.57 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.033</radius>
+              <length>0.018</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100000</mu>
+                <mu2>100000</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>100000</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='wheel_left_visual'>
+          <pose>0 0.08 0.023 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://turtlebot3_common/meshes/tire.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='wheel_right_link'>
+        <inertial>
+          <pose>0 -0.08 0.023 -1.57 0 0</pose>
+          <inertia>
+            <ixx>0.00181582</ixx>
+            <ixy>-9.3392e-12</ixy>
+            <ixz>1.04909e-11</ixz>
+            <iyy>0.00329221</iyy>
+            <iyz>5.75694e-11</iyz>
+            <izz>0.00181582</izz>
+          </inertia>
+          <mass>0.0284989</mass>
+        </inertial>
+        <collision name='wheel_right_collision'>
+          <pose>0 -0.08 0.023 -1.57 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.033</radius>
+              <length>0.018</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100000</mu>
+                <mu2>100000</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>100000</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='wheel_right_visual'>
+          <pose>0 -0.08 0.023 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://turtlebot3_common/meshes/tire.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='caster_back_link'>
+        <pose>-0.081 0 -0.004 -1.57 0 0</pose>
+        <inertial>
+          <mass>0.005</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <sphere>
+              <radius>0.005</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>100000</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='base_joint' type='fixed'>
+        <parent>base_footprint</parent>
+        <child>base_link</child>
+        <pose>0 0 0.01 0 -0 0</pose>
+      </joint>
+      <joint name='wheel_left_joint' type='revolute'>
+        <parent>base_link</parent>
+        <child>wheel_left_link</child>
+        <pose>0 0.08 0.023 -1.57 0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='wheel_right_joint' type='revolute'>
+        <parent>base_link</parent>
+        <child>wheel_right_link</child>
+        <pose>0 -0.08 0.023 -1.57 0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='caster_back_joint' type='ball'>
+        <parent>base_link</parent>
+        <child>caster_back_link</child>
+      </joint>
+      <joint name='imu_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>imu_link</child>
+        <pose>-0.032 0 0.068 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      <joint name='lidar_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>base_scan</child>
+        <pose>-0.032 0 0.171 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      <plugin name='turtlebot3_diff_drive' filename='libgazebo_ros_diff_drive.so'>
+        <ros/>
+        <update_rate>30</update_rate>
+        <left_joint>wheel_left_joint</left_joint>
+        <right_joint>wheel_right_joint</right_joint>
+        <wheel_separation>0.160</wheel_separation>
+        <wheel_diameter>0.066</wheel_diameter>
+        <max_wheel_torque>20</max_wheel_torque>
+        <max_wheel_acceleration>1.0</max_wheel_acceleration>
+        <command_topic>cmd_vel</command_topic>
+        <publish_odom>1</publish_odom>
+        <publish_odom_tf>1</publish_odom_tf>
+        <publish_wheel_tf>0</publish_wheel_tf>
+        <odometry_topic>odom</odometry_topic>
+        <odometry_frame>odom</odometry_frame>
+        <robot_base_frame>base_footprint</robot_base_frame>
+      </plugin>
+      <plugin name='turtlebot3_joint_state' filename='libgazebo_ros_joint_state_publisher.so'>
+        <ros>
+          <remapping>~/out:=joint_states</remapping>
+        </ros>
+        <update_rate>30</update_rate>
+        <joint_name>wheel_left_joint</joint_name>
+        <joint_name>wheel_right_joint</joint_name>
+      </plugin>
+    </model>
     <model name='unit_box_clone_6_clone_0_clone'>
       <link name='link'>
         <inertial>
@@ -3475,7 +4001,7 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-      <pose>0.028541 0.503395 0.499825 -0.000117 -0 -0</pose>
+      <pose>7.7263 7.27733 14.6866 -1.70504 -0.024513 2.24141</pose>
     </model>
   </world>
 </sdf>
