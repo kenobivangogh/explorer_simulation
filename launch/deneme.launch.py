@@ -21,7 +21,7 @@ def generate_launch_description():
 #    if not os.path.exists(world_file):
 #        raise FileNotFoundError(f"World file not found: {world_file}")
     urdf_file = os.path.join(
-            get_package_share_directory('my_robot_package'),
+            get_package_share_directory('explorer_simulation'),
             'urdf',
             'turtlebot3.urdf'
     )
@@ -31,6 +31,7 @@ def generate_launch_description():
         'rviz',
         'tb3_gazebo.rviz'
     )
+    
 #   rviz_config = os.path.join(pkg_explorer_simulation, 'rviz', 'turtlebot3_config.rviz')
 #    if not os.path.exists(rviz_config):
 #        raise FileNotFoundError(f"RViz config file not found: {rviz_config}")
