@@ -21,6 +21,7 @@ setup(
         ('share/' + package_name + '/worlds', ['worlds/multi_geo.world']),
         ('share/' + package_name + '/worlds', ['worlds/square.world']),
         ('share/' + package_name + '/worlds', ['worlds/complex.world']),
+        ('share/' + package_name + '/rviz', ['rviz/tb3_gazebo.rviz']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
