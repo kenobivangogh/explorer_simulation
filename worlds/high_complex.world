@@ -92,54 +92,54 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>126 548000000</sim_time>
-      <real_time>8 931163646</real_time>
-      <wall_time>1732725198 436402293</wall_time>
-      <iterations>7966</iterations>
+      <sim_time>137 123000000</sim_time>
+      <real_time>11 704022781</real_time>
+      <wall_time>1732725292 921987374</wall_time>
+      <iterations>10575</iterations>
       <model name='burger'>
-        <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
+        <pose>-8 -8 0.008533 0.000446 0.00578 8.4e-05</pose>
         <scale>1 1 1</scale>
         <link name='base_footprint'>
-          <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
-          <velocity>-9e-06 8e-06 -0.054063 0.00043 0.000562 -0</velocity>
-          <acceleration>-0.001695 5.7e-05 0.828386 1.9e-05 0.050351 1.2e-05</acceleration>
-          <wrench>-0.001695 5.7e-05 0.828386 0 -0 0</wrench>
+          <pose>-8 -8 0.008533 0.000446 0.00578 8.4e-05</pose>
+          <velocity>-7e-06 8e-06 -0.050892 0.00043 0.0009 -1e-06</velocity>
+          <acceleration>0.000666 -2.8e-05 0.284856 -7e-06 0.046392 5e-06</acceleration>
+          <wrench>0.000666 -2.8e-05 0.284856 0 -0 0</wrench>
         </link>
         <link name='base_link'>
-          <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
-          <velocity>-9e-06 8e-06 -0.054064 0.00043 0.000561 0</velocity>
-          <acceleration>0.001825 5.5e-05 0.829887 1.9e-05 0.050343 9e-06</acceleration>
-          <wrench>0.001507 4.6e-05 0.685266 0 -0 0</wrench>
+          <pose>-8 -8 0.008533 0.000446 0.00578 8.4e-05</pose>
+          <velocity>-7e-06 8e-06 -0.050893 0.00043 0.0009 -1e-06</velocity>
+          <acceleration>0.003923 -2.8e-05 0.286348 -7e-06 0.046395 2e-06</acceleration>
+          <wrench>0.00324 -2.3e-05 0.236447 0 -0 0</wrench>
         </link>
         <link name='base_scan'>
-          <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
-          <velocity>-9e-06 8e-06 -0.054059 0.00043 0.000562 -0</velocity>
-          <acceleration>0.006365 5.5e-05 0.829802 2.2e-05 0.050398 1.2e-05</acceleration>
-          <wrench>0.000726 6e-06 0.094597 0 -0 0</wrench>
+          <pose>-8 -8 0.008533 0.000446 0.00578 8.4e-05</pose>
+          <velocity>-7e-06 8e-06 -0.050888 0.00043 0.0009 -1e-06</velocity>
+          <acceleration>0.008146 -2.7e-05 0.285612 -5e-06 0.046391 4e-06</acceleration>
+          <wrench>0.000929 -3e-06 0.03256 0 -0 0</wrench>
         </link>
         <link name='caster_back_link'>
-          <pose>-8.08102 -8 0.004993 -2.29278 -0.059422 -0.008012</pose>
-          <velocity>-1.1e-05 1.1e-05 -0.053157 -0.002116 -0.002238 0</velocity>
-          <acceleration>1.7e-05 -3.6e-05 0.915441 0.001554 0.001878 0</acceleration>
-          <wrench>0 -0 0.004577 0 -0 0</wrench>
+          <pose>-8.08102 -8 0.005001 -2.31396 -0.083157 -0.006491</pose>
+          <velocity>-1.1e-05 1.1e-05 -0.050012 -0.002193 -0.002303 0</velocity>
+          <acceleration>5e-06 1e-06 0.265057 0.001676 0.001806 0</acceleration>
+          <wrench>0 0 0.001325 0 -0 0</wrench>
         </link>
         <link name='imu_link'>
-          <pose>-8 -8 0.008526 0.000446 0.005781 6e-05</pose>
-          <velocity>-9e-06 8e-06 -0.05406 0.00043 0.000562 -0</velocity>
-          <acceleration>-0.001755 5.8e-05 0.828702 2e-05 0.050361 1.2e-05</acceleration>
-          <wrench>-0.001755 5.8e-05 0.828702 0 -0 0</wrench>
+          <pose>-8 -8 0.008533 0.000446 0.00578 8.4e-05</pose>
+          <velocity>-7e-06 8e-06 -0.050889 0.00043 0.0009 -1e-06</velocity>
+          <acceleration>0.000671 -2.9e-05 0.284762 -8e-06 0.04639 5e-06</acceleration>
+          <wrench>0.000671 -2.9e-05 0.284762 0 -0 0</wrench>
         </link>
         <link name='wheel_left_link'>
-          <pose>-8 -8 0.008526 0.000446 0.005823 6e-05</pose>
-          <velocity>6e-06 -4e-06 -0.054073 0.000423 0.000561 0</velocity>
-          <acceleration>0.001631 1e-06 0.827452 -3.8e-05 0.049443 -1.1e-05</acceleration>
-          <wrench>4.6e-05 0 0.023581 0 -0 0</wrench>
+          <pose>-8 -8 0.008533 0.000447 0.00589 8.4e-05</pose>
+          <velocity>9e-06 -4e-06 -0.050901 0.000423 0.000898 -1e-06</velocity>
+          <acceleration>0.001531 -1e-06 0.285144 2.8e-05 0.046378 1.7e-05</acceleration>
+          <wrench>4.4e-05 -0 0.008126 0 -0 0</wrench>
         </link>
         <link name='wheel_right_link'>
-          <pose>-8 -8 0.008526 0.000446 0.00598 6e-05</pose>
-          <velocity>6e-06 -4e-06 -0.054073 0.000423 0.000561 0</velocity>
-          <acceleration>0.001631 1e-06 0.827542 -3.3e-05 0.049431 -7e-06</acceleration>
-          <wrench>4.6e-05 0 0.023584 0 -0 0</wrench>
+          <pose>-8 -8 0.008533 0.000447 0.006054 8.4e-05</pose>
+          <velocity>9e-06 -4e-06 -0.050902 0.000423 0.000898 -1e-06</velocity>
+          <acceleration>0.00153 -1e-06 0.28509 2.7e-05 0.046364 1.6e-05</acceleration>
+          <wrench>4.4e-05 -0 0.008125 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -183,31 +183,31 @@
         </link>
       </model>
       <model name='unit_box_clone_1_clone_clone_clone'>
-        <pose>-9.52868 0.016432 0.861559 -0.007057 0.00017 0.000985</pose>
+        <pose>-9.52868 0.016465 0.950061 -0.008787 0.00022 0.000843</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-9.52868 0.016432 0.861559 -0.007057 0.00017 0.000985</pose>
-          <velocity>0 3e-06 0.008369 -0.000163 4e-06 0</velocity>
-          <acceleration>0 0 0 -0 -0 -0</acceleration>
+          <pose>-9.52868 0.016465 0.950061 -0.008787 0.00022 0.000843</pose>
+          <velocity>-0 3e-06 0.008369 -0.000164 5e-06 -1.6e-05</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_clone_1_clone_clone_clone_clone'>
-        <pose>9.51142 0.014234 0.861559 -0.007057 0.00017 0.000985</pose>
+        <pose>9.51142 0.014266 0.950061 -0.008781 0.000214 0.000985</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>9.51142 0.014234 0.861559 -0.007057 0.00017 0.000985</pose>
+          <pose>9.51142 0.014266 0.950061 -0.008781 0.000214 0.000985</pose>
           <velocity>0 3e-06 0.008369 -0.000163 4e-06 0</velocity>
-          <acceleration>0 0 0 -0 -0 -0</acceleration>
+          <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_clone_2'>
-        <pose>-7.34569 -3.5515 0.618974 -0.001197 0.209469 -0.032353</pose>
+        <pose>-7.51159 -3.27159 0.490518 0.002711 -1e-06 0.000552</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-7.34569 -3.5515 0.618974 -0.001197 0.209469 -0.032353</pose>
-          <velocity>0.005403 -0.002293 0.003887 0.000116 0.006888 -0.000555</velocity>
+          <pose>-7.51159 -3.27159 0.490518 0.002711 -1e-06 0.000552</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
@@ -253,22 +253,22 @@
         </link>
       </model>
       <model name='unit_box_clone_5_clone_clone'>
-        <pose>-0.027811 9.53981 0.791018 -0.000365 0.015995 -0.000105</pose>
+        <pose>-0.027737 9.53981 0.861828 -0.00045 0.019887 -0.000107</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.027811 9.53981 0.791018 -0.000365 0.015995 -0.000105</pose>
+          <pose>-0.027737 9.53981 0.861828 -0.00045 0.019887 -0.000107</pose>
           <velocity>7e-06 0 0.006696 -8e-06 0.000368 0</velocity>
-          <acceleration>0 0 0 -0 -0 -0</acceleration>
+          <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_clone_5_clone_clone_clone'>
-        <pose>-0.011845 -9.46798 0.791018 -0.000365 0.015995 -0.000105</pose>
+        <pose>-0.011769 -9.46798 0.861828 -0.000452 0.019873 -3.5e-05</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.011845 -9.46798 0.791018 -0.000365 0.015995 -0.000105</pose>
-          <velocity>7e-06 0 0.006696 -8e-06 0.000368 0</velocity>
-          <acceleration>0 0 0 -0 -0 -0</acceleration>
+          <pose>-0.011769 -9.46798 0.861828 -0.000452 0.019873 -3.5e-05</pose>
+          <velocity>7e-06 -0 0.006696 -8e-06 0.000366 8e-06</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
@@ -303,11 +303,11 @@
         </link>
       </model>
       <model name='unit_box_clone_6_clone_0_clone'>
-        <pose>0.028541 0.503395 0.499825 -0.000117 0 0</pose>
+        <pose>0.028541 0.501603 0.589711 0.010633 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.028541 0.503395 0.499825 -0.000117 0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
+          <pose>0.028541 0.501603 0.589711 0.010633 -0 0</pose>
+          <velocity>-0 -0.000168 0.00849 0.001006 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
@@ -433,12 +433,12 @@
         </link>
       </model>
       <model name='unit_box_clone_7_clone_clone'>
-        <pose>-0.006617 -8.0888 0.513066 0.016484 9.3e-05 -5.1e-05</pose>
+        <pose>-0.006606 -8.09063 0.516228 0.020471 0.000114 -6.1e-05</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.006617 -8.0888 0.513066 0.016484 9.3e-05 -5.1e-05</pose>
+          <pose>-0.006606 -8.09063 0.516228 0.020471 0.000114 -6.1e-05</pose>
           <velocity>1e-06 -0.000173 0.000299 0.000377 2e-06 -1e-06</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
+          <acceleration>0 0 0 -0 -0 -0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
@@ -972,108 +972,6 @@
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-7.48212 4.72649 0.490518 0.002711 -1e-06 0.000552</pose>
-    </model>
-    <model name='unit_box_clone_2'>
-      <link name='link'>
-        <inertial>
-          <mass>1</mass>
-          <inertia>
-            <ixx>0.166667</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.166667</iyy>
-            <iyz>0</iyz>
-            <izz>0.166667</izz>
-          </inertia>
-          <pose>0 0 0 0 -0 0</pose>
-        </inertial>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-        <pose>0 0 0 0 -0 0</pose>
-        <gravity>0</gravity>
-        <visual name='visual'>
-          <geometry>
-            <box>
-              <size>1 7 1</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-            <shader type='pixel'>
-              <normal_map>__default__</normal_map>
-            </shader>
-            <ambient>0.3 0.3 0.3 1</ambient>
-            <diffuse>0.7 0.7 0.7 1</diffuse>
-            <specular>0.01 0.01 0.01 1</specular>
-            <emissive>0 0 0 1</emissive>
-          </material>
-          <pose>0 0 0 0 -0 0</pose>
-          <transparency>0</transparency>
-          <cast_shadows>1</cast_shadows>
-        </visual>
-        <collision name='collision'>
-          <laser_retro>0</laser_retro>
-          <max_contacts>10</max_contacts>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>1 7 1</size>
-            </box>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-                <fdir1>0 0 0</fdir1>
-                <slip1>0</slip1>
-                <slip2>0</slip2>
-              </ode>
-              <torsional>
-                <coefficient>1</coefficient>
-                <patch_radius>0</patch_radius>
-                <surface_radius>0</surface_radius>
-                <use_patch_radius>1</use_patch_radius>
-                <ode>
-                  <slip>0</slip>
-                </ode>
-              </torsional>
-            </friction>
-            <bounce>
-              <restitution_coefficient>0</restitution_coefficient>
-              <threshold>1e+06</threshold>
-            </bounce>
-            <contact>
-              <collide_without_contact>0</collide_without_contact>
-              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-              <collide_bitmask>1</collide_bitmask>
-              <ode>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-                <max_vel>0.01</max_vel>
-                <min_depth>0</min_depth>
-              </ode>
-              <bullet>
-                <split_impulse>1</split_impulse>
-                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-                <soft_cfm>0</soft_cfm>
-                <soft_erp>0.2</soft_erp>
-                <kp>1e+13</kp>
-                <kd>1</kd>
-              </bullet>
-            </contact>
-          </surface>
-        </collision>
-      </link>
-      <static>0</static>
-      <allow_auto_disable>1</allow_auto_disable>
-      <pose>-7.51159 -3.27159 0.490518 0.002711 -1e-06 0.000552</pose>
     </model>
     <model name='unit_box_clone_1_clone'>
       <link name='link'>
@@ -4002,6 +3900,108 @@
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose>7.7263 7.27733 14.6866 -1.70504 -0.024513 2.24141</pose>
+    </model>
+    <model name='unit_box_clone_2'>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+        <pose>0 0 0 0 -0 0</pose>
+        <gravity>0</gravity>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 7 1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+            <shader type='pixel'>
+              <normal_map>__default__</normal_map>
+            </shader>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <pose>0 0 0 0 -0 0</pose>
+          <transparency>0</transparency>
+          <cast_shadows>1</cast_shadows>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1 7 1</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>1e+06</threshold>
+            </bounce>
+            <contact>
+              <collide_without_contact>0</collide_without_contact>
+              <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
+              <collide_bitmask>1</collide_bitmask>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+              <bullet>
+                <split_impulse>1</split_impulse>
+                <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1</kd>
+              </bullet>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>-7.28956 -3.57532 0.659356 -0.002566 0.281026 -0.038454</pose>
     </model>
   </world>
 </sdf>
