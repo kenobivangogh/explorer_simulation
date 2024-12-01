@@ -27,7 +27,7 @@ def generate_launch_description():
      #   'tb3_gazebo.rviz'
     #)
 
-    rviz_config2 = os.path.join(
+    rviz_config = os.path.join(
         get_package_share_directory('explorer_simulation'),
         'rviz',
         'tb3_cartographer.rviz'
