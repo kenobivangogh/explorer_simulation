@@ -21,11 +21,11 @@ def generate_launch_description():
 #    if not os.path.exists(world_file):
 #        raise FileNotFoundError(f"World file not found: {world_file}")
 
-    rviz_config = os.path.join(
-        get_package_share_directory('explorer_simulation'),
-        'rviz',
-        'tb3_gazebo.rviz'
-    )
+    #rviz_config = os.path.join(
+    #    get_package_share_directory('explorer_simulation'),
+    #    'rviz',
+     #   'tb3_gazebo.rviz'
+    #)
 
     rviz_config2 = os.path.join(
         get_package_share_directory('explorer_simulation'),
