@@ -25,7 +25,7 @@ setup(
         ('share/' + package_name + '/worlds', ['worlds/high_complex.world']),
         ('share/' + package_name + '/worlds', ['worlds/deneme.world']),
         ('share/' + package_name + '/rviz', ['rviz/tb3_gazebo.rviz']),
-        ('share/' + package_name + '/rviz', ['rviz/tb3_cartographer.rviz']),
+        ('share/' + package_name + '/rviz', ['rviz/cartographer.rviz']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
