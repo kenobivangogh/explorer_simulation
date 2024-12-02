@@ -16,6 +16,7 @@ setup(
         ('share/' + package_name + '/launch', ['launch/complex_world.launch.py']),
         ('share/' + package_name + '/launch', ['launch/high_complex_world.launch.py']),
         ('share/' + package_name + '/launch', ['launch/test.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/deneme123.launch.py']),
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/robot_state_publisher.launch.py']),
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/spawn_turtlebot3.launch.py']),
         ('share/' + package_name + '/worlds', ['worlds/simple.world']),
