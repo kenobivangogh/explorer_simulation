@@ -28,9 +28,9 @@ def generate_launch_description():
     #)
 
     rviz_config = os.path.join(
-        get_package_share_directory('turtlebot3_cartographer'),
+        get_package_share_directory('explorer_simulation'),
         'rviz',
-        'tb3_cartographer.rviz'
+        'turtle_carto.rviz'
     )
 #   rviz_config = os.path.join(pkg_explorer_simulation, 'rviz', 'turtlebot3_config.rviz')
 #    if not os.path.exists(rviz_config):
@@ -57,18 +57,12 @@ def generate_launch_description():
                 os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'spawn_turtlebot3.launch.py')
             )
         ),   
-
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                os.path.join(get_package_share_directory('turtlebot3_cartographer'), 'launch', 'cartographer.launch.py')
-            )
-        ),  
         # RViz
-       # Node(
-        #    package='rviz2',
-        #    executable='rviz2',
-         #   name='rviz2',
-          #  output='screen',
-           # arguments=['-d', rviz_config] # buraya eklenebilir mi carto .rviz bak bi
-        #)
+        Node(
+            package='rviz2',
+            executable='rviz2',
+            name='rviz2',
+            output='screen',
+            arguments=['-d', rviz_config] 
+        )
     ])

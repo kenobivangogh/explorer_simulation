@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
-import os
-from glob import glob
+#import os
+#from glob import glob
 
 package_name = 'explorer_simulation'
 
@@ -30,8 +30,8 @@ setup(
         ('share/' + package_name + '/rviz', ['rviz/tb3_gazebo.rviz']),
         ('share/' + package_name + '/rviz', ['rviz/cartographer.rviz']),
         ('share/' + package_name + '/rviz', ['rviz/turtle_carto.rviz']),
-        ('share/' + package_name + '/turtlebot3_cartographer', 
-         glob('/opt/ros/humble/share/turtlebot3_cartographer/*')),
+   #     ('share/' + package_name + '/turtlebot3_cartographer', 
+      #   glob('/opt/ros/humble/share/turtlebot3_cartographer/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
