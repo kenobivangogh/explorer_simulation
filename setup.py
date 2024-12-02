@@ -26,6 +26,7 @@ setup(
         ('share/' + package_name + '/worlds', ['worlds/deneme.world']),
         ('share/' + package_name + '/rviz', ['rviz/tb3_gazebo.rviz']),
         ('share/' + package_name + '/rviz', ['rviz/cartographer.rviz']),
+        ('share/' + package_name + '/rviz', ['rviz/turtle_carto.rviz']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
