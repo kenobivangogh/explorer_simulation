@@ -10,7 +10,6 @@ def generate_launch_description():
     world_file = os.path.join(
         get_package_share_directory('explorer_simulation'),
         'worlds',
-        #'deneme.world'
         'square.world' # sonradan eklendi
     )    
 
