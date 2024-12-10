@@ -15,7 +15,8 @@ def generate_launch_description():
     world_file = os.path.join(
         get_package_share_directory('explorer_simulation'),
         'worlds',
-        'deneme.world'
+        #'deneme.world'
+        'high_complex.world'
     )
 #   world_file = os.path.join(pkg_explorer_simulation, 'worlds', 'simple.world')
 #    if not os.path.exists(world_file):
