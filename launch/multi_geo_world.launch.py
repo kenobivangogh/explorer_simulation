@@ -39,6 +39,18 @@ def generate_launch_description():
             launch_arguments={'world': world_file}.items()
         ),
 
+        # Nav2 Bringup
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(
+                    get_package_share_directory('nav2_bringup'),
+                    'launch',
+                    'bringup_launch.py'
+                )
+            ),
+            launch_arguments={'map': map.yaml}.items()
+        ),
+
                 # TurtleBot3
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
