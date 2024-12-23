@@ -22,6 +22,7 @@ setup(
         ('share/' + package_name + '/launch', ['launch/cartographer.launch.py']),
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/robot_state_publisher.launch.py']),
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/spawn_turtlebot3.launch.py']),
+        #('share/' + 'nav2_bringup' + '/launch', ['launch/bringup_launch.py']),
         ('share/' + package_name + '/worlds', ['worlds/simple.world']),
         ('share/' + package_name + '/worlds', ['worlds/multi_geo.world']),
         ('share/' + package_name + '/worlds', ['worlds/square.world']),
