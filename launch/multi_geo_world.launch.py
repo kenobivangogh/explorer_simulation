@@ -11,6 +11,13 @@ def generate_launch_description():
 #   pkg_explorer_simulation = get_package_share_directory('explorer_simulation')
 #   pkg_turtlebot3_gazebo = get_package_share_directory('turtlebot3_gazebo')
 
+    # Map file path
+    map_file = os.path.join(
+        get_package_share_directory('explorer'),
+        'launch',
+        'map.yaml'
+    )
+
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
     world_file = os.path.join(
         get_package_share_directory('explorer_simulation'),
@@ -51,6 +58,18 @@ def generate_launch_description():
      #       launch_arguments={'map': map.yaml}.items()
      #   ),
 
+             # Nav2 Bringup
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(
+                    get_package_share_directory('nav2_bringup'),
+                    'launch',
+                    'bringup_launch.py'
+                )
+            ),
+            launch_arguments={'map': map_file}.items()
+        ),
+
                 # TurtleBot3
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
@@ -70,5 +89,14 @@ def generate_launch_description():
             name='rviz2',
             output='screen',
             arguments=['-d', rviz_config]
+        ),
+
+                # Map Server
+        Node(
+            package='nav2_map_server',
+            executable='map_server',
+            name='map_server',
+            parameters=[{'yaml_filename': 'map.yaml'}],
+            output='screen'
         )
     ])
