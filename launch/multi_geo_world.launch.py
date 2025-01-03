@@ -7,7 +7,7 @@ from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
-    """paketlerin dizinlerini alp o şekilde devam etmek için"""
+#    """paketlerin dizinlerini alp o şekilde devam etmek için"""
 #   pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 #   pkg_explorer_simulation = get_package_share_directory('explorer_simulation')
 #   pkg_turtlebot3_gazebo = get_package_share_directory('turtlebot3_gazebo')
@@ -36,22 +36,6 @@ def generate_launch_description():
     'rviz',
     'nav2_default_view.rviz')
 
-    # rviz_config = os.path.join(
-    #     get_package_share_directory('explorer_simulation'),
-    #     'rviz',
-    #     'deneme.rviz'
-    # )
-
-    # Harita dosyası (Navigation için)
-    # map_file = os.path.join(get_package_share_directory('explorer_simulation'), 'maps', 'map.yaml')
-
-
-    # print(f"Map file path: {map_dir}")
-    # print(f"RViz config file path: {rviz_config}")
-    # print(f"Gazebo world file path: {world_file}")
-
-
-
     return LaunchDescription([
 
         DeclareLaunchArgument(
@@ -70,6 +54,7 @@ def generate_launch_description():
                 'map': map_dir,
                 'use_sim_time': use_sim_time}.items(),
         ),
+
         # Gazebo
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
@@ -91,6 +76,7 @@ def generate_launch_description():
             )
         ),   
 
+        # RViz
         Node(
             package='rviz2',
             executable='rviz2',
@@ -99,29 +85,4 @@ def generate_launch_description():
             parameters=[{'use_sim_time': use_sim_time}],
             output='screen'),
 
-        # # Nav2 Bringup
-        # IncludeLaunchDescription(
-        #     PythonLaunchDescriptionSource(
-        #         os.path.join(get_package_share_directory('nav2_bringup'), 'launch', 'bringup_launch.py')
-        #     ),
-        #     launch_arguments={
-        #         'map': map_file,
-        #         'use_sim_time': LaunchConfiguration('use_sim_time')
-        #     }.items()
-        # ),
-        
-        # RViz
-        # Node(
-        #     package='rviz2',
-        #     executable='rviz2',
-        #     name='rviz2',
-        #     output='screen',
-        #     arguments=['-d', rviz_config]
-        # ),
-
-    #     DeclareLaunchArgument(
-    #     'map',
-    #     default_value=map_file,
-    #     description='Path to the map file to use'
-    # )
     ])
