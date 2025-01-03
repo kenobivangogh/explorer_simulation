@@ -21,7 +21,7 @@
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>tf2</exec_depend>
-  
+  <exec_depend>nav2_bringup</exec_depend>
   <exec_depend>setuptools</exec_depend>
  
 
