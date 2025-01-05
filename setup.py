@@ -25,6 +25,7 @@ setup(
         #('share/' + 'nav2_bringup' + '/launch', ['launch/bringup_launch.py']),
         # Harita dosyaları
         ('share/' + package_name + '/maps', ['maps/map.yaml', 'maps/map.pgm']),
+        ('share/' + package_name + '/maps', ['maps/square_map.pgm.yaml', 'maps/square_map.pgm.pgm']),
         ('share/' + package_name + '/worlds', ['worlds/simple.world']),
         ('share/' + package_name + '/worlds', ['worlds/multi_geo.world']),
         ('share/' + package_name + '/worlds', ['worlds/square.world']),
