@@ -1,5 +1,6 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
@@ -10,33 +11,61 @@ def generate_launch_description():
 #   pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 #   pkg_explorer_simulation = get_package_share_directory('explorer_simulation')
 #   pkg_turtlebot3_gazebo = get_package_share_directory('turtlebot3_gazebo')
+    # use_sim_time = LaunchConfiguration('use_sim_time', default='false')
+
+    # map_dir = LaunchConfiguration(
+    # 'map',
+    # default=os.path.join(
+    #     get_package_share_directory('explorer_simulation'),
+    #     'maps',
+    #     'square_map.pgm.yaml'))
+    
+    # nav2_launch_file_dir = os.path.join(get_package_share_directory('nav2_bringup'), 'launch')
 
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
+
     world_file = os.path.join(
         get_package_share_directory('explorer_simulation'),
         'worlds',
-        'deneme.world'
+        'complexos.world'
     )
 #   world_file = os.path.join(pkg_explorer_simulation, 'worlds', 'simple.world')
 #    if not os.path.exists(world_file):
 #        raise FileNotFoundError(f"World file not found: {world_file}")
-    urdf_file = os.path.join(
-            get_package_share_directory('explorer_simulation'),
-            'urdf',
-            'turtlebot3.urdf'
-    )
 
-    rviz_config = os.path.join(
-        get_package_share_directory('explorer_simulation'),
-        'rviz',
-        'tb3_gazebo.rviz'
-    )
+    rviz_config_dir = os.path.join(
+    get_package_share_directory('nav2_bringup'),
+    'rviz',
+    'nav2_default_view.rviz')
     
+    # rviz_config = os.path.join(
+    #     get_package_share_directory('explorer_simulation'),
+    #     'rviz',
+    #     'tb3_gazebo.rviz'
+    # )
 #   rviz_config = os.path.join(pkg_explorer_simulation, 'rviz', 'turtlebot3_config.rviz')
 #    if not os.path.exists(rviz_config):
 #        raise FileNotFoundError(f"RViz config file not found: {rviz_config}")
 
     return LaunchDescription([
+
+        # DeclareLaunchArgument(
+        # 'map',
+        # default_value=map_dir,
+        # description='Full path to map file to load'),
+
+        # DeclareLaunchArgument(
+        #     'use_sim_time',
+        #     default_value='false',
+        #     description='Use simulation (Gazebo) clock if true'),
+
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource([nav2_launch_file_dir, '/bringup_launch.py']),
+        #     launch_arguments={
+        #         'map': map_dir,
+        #         'use_sim_time': use_sim_time}.items(),
+        # ),
+
         # Gazebo
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
@@ -58,20 +87,12 @@ def generate_launch_description():
                 os.path.join(get_package_share_directory('turtlebot3_gazebo'), 'launch', 'spawn_turtlebot3.launch.py')
             )
         ),   
-
-        Node(
-            package='robot_state_publisher',
-            executable='robot_state_publisher',
-            name='robot_state_publisher',
-            output='screen',
-            parameters=[{'robot_description': urdf_file}]
-        ),
         # RViz
         Node(
             package='rviz2',
             executable='rviz2',
             name='rviz2',
             output='screen',
-            arguments=['-d', rviz_config]
+            arguments=['-d', rviz_config_dir]
         )
     ])
