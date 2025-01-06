@@ -12,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/launch', ['launch/empty_world.launch.py']),
         ('share/' + package_name + '/launch', ['launch/simple_world.launch.py']),
         ('share/' + package_name + '/launch', ['launch/multi_geo_world.launch.py']),
         ('share/' + package_name + '/launch', ['launch/square_world.launch.py']),
@@ -25,6 +26,7 @@ setup(
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/spawn_turtlebot3.launch.py']),
         #('share/' + 'nav2_bringup' + '/launch', ['launch/bringup_launch.py']),
         # Harita dosyaları
+        ('share/' + package_name + '/maps', ['maps/empty.pgm.yaml', 'maps/empty.pgm.pgm']),
         ('share/' + package_name + '/maps', ['maps/map.yaml', 'maps/map.pgm']),
         ('share/' + package_name + '/maps', ['maps/square_map.pgm.yaml', 'maps/square_map.pgm.pgm']),
         ('share/' + package_name + '/worlds', ['worlds/simple.world']),
