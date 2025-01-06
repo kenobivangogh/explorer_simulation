@@ -18,7 +18,6 @@ setup(
         ('share/' + package_name + '/launch', ['launch/denemedegil.launch.py']),
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/robot_state_publisher.launch.py']),
         ('share/' + 'turtlebot3_gazebo' + '/launch', ['launch/spawn_turtlebot3.launch.py']),
-        #('share/' + 'nav2_bringup' + '/launch', ['launch/bringup_launch.py']),
         # Harita dosyaları
         ('share/' + package_name + '/maps', ['maps/empty.pgm.yaml', 'maps/empty.pgm.pgm']),
         ('share/' + package_name + '/maps', ['maps/simple.pgm.yaml', 'maps/simple.pgm.pgm']),
@@ -27,8 +26,6 @@ setup(
         ('share/' + package_name + '/worlds', ['worlds/emptyos.world']),
         ('share/' + package_name + '/worlds', ['worlds/simpleos.world']),
         ('share/' + package_name + '/rviz', ['rviz/tb3_gazebo.rviz']),
-     #   ('share/' + package_name + '/rviz', ['rviz/cartographer.rviz']),
-        ('share/' + package_name + '/rviz', ['rviz/tb3_cartographer.rviz']),
 
     ],
     install_requires=['setuptools'],
