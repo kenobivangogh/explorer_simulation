@@ -7,11 +7,7 @@ from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
-#    """paketlerin dizinlerini alp o şekilde devam etmek için"""
-#   pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
-#   pkg_explorer_simulation = get_package_share_directory('explorer_simulation')
-#   pkg_turtlebot3_gazebo = get_package_share_directory('turtlebot3_gazebo')
-#   pkg_nav2_bringup = get_package_share_directory('nav2_bringup')
+
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
 
     map_dir = LaunchConfiguration(
@@ -37,7 +33,7 @@ def generate_launch_description():
     'nav2_default_view.rviz')
 
     return LaunchDescription([
-
+        # Map
         DeclareLaunchArgument(
         'map',
         default_value=map_dir,
