@@ -15,7 +15,7 @@ def generate_launch_description():
     default=os.path.join(
         get_package_share_directory('explorer_simulation'),
         'maps',
-        'simple.pgm.yaml'))
+        'complex.pgm.yaml'))
 
     nav2_launch_file_dir = os.path.join(get_package_share_directory('nav2_bringup'), 'launch')
 
@@ -24,7 +24,7 @@ def generate_launch_description():
     world_file = os.path.join(
         get_package_share_directory('explorer_simulation'),
         'worlds',
-        'simpleos.world'
+        'complexos.world'
     )
 
     rviz_config_dir = os.path.join(

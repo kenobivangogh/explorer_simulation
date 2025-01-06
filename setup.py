@@ -24,6 +24,7 @@ setup(
         # Harita dosyaları
         ('share/' + package_name + '/maps', ['maps/empty.pgm.yaml', 'maps/empty.pgm.pgm']),
         ('share/' + package_name + '/maps', ['maps/simple.pgm.yaml', 'maps/simple.pgm.pgm']),
+        ('share/' + package_name + '/maps', ['maps/complex.pgm.yaml', 'maps/complex.pgm.pgm']),
         ('share/' + package_name + '/maps', ['maps/map.yaml', 'maps/map.pgm']),
         ('share/' + package_name + '/maps', ['maps/square_map.pgm.yaml', 'maps/square_map.pgm.pgm']),
         ('share/' + package_name + '/worlds', ['worlds/simple.world']),
