@@ -32,6 +32,8 @@ setup(
         ('share/' + package_name + '/worlds', ['worlds/square.world']),
         ('share/' + package_name + '/worlds', ['worlds/complex.world']),
         ('share/' + package_name + '/worlds', ['worlds/complexos.world']),
+        ('share/' + package_name + '/worlds', ['worlds/emptyos.world']),
+        ('share/' + package_name + '/worlds', ['worlds/simpleos.world']),
         ('share/' + package_name + '/worlds', ['worlds/high_complex.world']),
         ('share/' + package_name + '/worlds', ['worlds/deneme.world']),
         ('share/' + package_name + '/rviz', ['rviz/tb3_gazebo.rviz']),

@@ -27,7 +27,7 @@ def generate_launch_description():
     world_file = os.path.join(
         get_package_share_directory('explorer_simulation'),
         'worlds',
-        'complexos.world'
+        'emptyos.world'
     )
 #   world_file = os.path.join(pkg_explorer_simulation, 'worlds', 'simple.world')
 #    if not os.path.exists(world_file):
@@ -54,10 +54,10 @@ def generate_launch_description():
         # default_value=map_dir,
         # description='Full path to map file to load'),
 
-        # DeclareLaunchArgument(
-        #     'use_sim_time',
-        #     default_value='false',
-        #     description='Use simulation (Gazebo) clock if true'),
+        DeclareLaunchArgument(
+            'use_sim_time',
+            default_value='false',
+            description='Use simulation (Gazebo) clock if true'),
 
         # IncludeLaunchDescription(
         #     PythonLaunchDescriptionSource([nav2_launch_file_dir, '/bringup_launch.py']),
