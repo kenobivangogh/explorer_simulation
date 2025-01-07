@@ -25,6 +25,10 @@ setup(
         ('share/' + package_name + '/worlds', ['worlds/simpleos.world']),
         ('share/' + package_name + '/rviz', ['rviz/tb3_gazebo.rviz']),
 
+        ('share/' + package_name + '/worlds', ['worlds/nav_complex.world']),
+        ('share/' + package_name + '/worlds', ['worlds/nav_simple.world']),
+        ('share/' + package_name + '/worlds', ['worlds/nav_moderate.world']),
+
     ],
     install_requires=['setuptools'],
     zip_safe=True,
