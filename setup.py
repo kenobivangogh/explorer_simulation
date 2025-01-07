@@ -25,6 +25,10 @@ setup(
         ('share/' + package_name + '/worlds', ['worlds/simpleos.world']),
         ('share/' + package_name + '/rviz', ['rviz/tb3_gazebo.rviz']),
 
+        ('share/' + package_name + '/launch', ['launch/nav_moderate.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/nav_simple.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/nav_complex.launch.py']),
+
         ('share/' + package_name + '/maps', ['maps/nav_moderate.yaml', 'maps/nav_moderate.pgm']),
         ('share/' + package_name + '/maps', ['maps/nav_simple.yaml', 'maps/nav_simple.pgm']),
         ('share/' + package_name + '/maps', ['maps/nav_complex.yaml', 'maps/nav_complex.pgm']),
