@@ -48,7 +48,8 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([nav2_launch_file_dir, '/bringup_launch.py']),
             launch_arguments={
                 'map': map_dir,
-                'use_sim_time': use_sim_time}.items(),
+                'use_sim_time': use_sim_time,
+                'disable_plugins': 'planner_server'}.items(),
         ),
 
         # Gazebo

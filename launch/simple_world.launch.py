@@ -15,7 +15,7 @@ def generate_launch_description():
     default=os.path.join(
         get_package_share_directory('explorer_simulation'),
         'maps',
-        'simple.pgm.yaml'))
+        'nav_moderate.yaml'))
 
     nav2_launch_file_dir = os.path.join(get_package_share_directory('nav2_bringup'), 'launch')
 
@@ -24,7 +24,7 @@ def generate_launch_description():
     world_file = os.path.join(
         get_package_share_directory('explorer_simulation'),
         'worlds',
-        'simpleos.world'
+        'nav_moderate.world'
     )
 
     rviz_config_dir = os.path.join(
@@ -48,7 +48,8 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([nav2_launch_file_dir, '/bringup_launch.py']),
             launch_arguments={
                 'map': map_dir,
-                'use_sim_time': use_sim_time}.items(),
+                'use_sim_time': use_sim_time,
+                'disable_plugins': 'planner_server'}.items(),
         ),
 
         # Gazebo
