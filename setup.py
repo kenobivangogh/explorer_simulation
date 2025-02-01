@@ -28,7 +28,7 @@ setup(
         ('share/' + package_name + '/launch', ['launch/nav_moderate.launch.py']),
         ('share/' + package_name + '/launch', ['launch/nav_simple.launch.py']),
         ('share/' + package_name + '/launch', ['launch/nav_complex.launch.py']),
-        ('share/' + package_name + '/launch', ['launch/deneme.launch.py']),
+        
 
         ('share/' + package_name + '/maps', ['maps/nav_moderate.yaml', 'maps/nav_moderate.pgm']),
         ('share/' + package_name + '/maps', ['maps/nav_simple.yaml', 'maps/nav_simple.pgm']),
